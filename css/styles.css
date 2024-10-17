@@ -307,5 +307,50 @@ a {
   color: var(--color-text-white);
 }
 
-.footer__content {
+.portfolio {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.portfolio__categories {
+  display: flex;
+  justify-content: center;
+}
+
+.categories__item {
+}
+
+.categories__button {
+}
+
+.portfolio__projects {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project__item {
+  padding: 0 0 20px;
+}
+
+.project__content {
+  margin: 20px auto;
+}
+
+.project__title {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.project__category {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
 }
