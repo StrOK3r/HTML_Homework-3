@@ -308,19 +308,40 @@ a {
 }
 
 .portfolio {
-  margin: 0 auto;
+  margin: 94px auto;
   width: 1170px;
 }
 
 .portfolio__categories {
+  margin: 0 auto 34px;
   display: flex;
   justify-content: center;
+  gap: 8px;
 }
 
 .categories__item {
 }
 
 .categories__button {
+  padding: 0 22px;
+  height: 38px;
+
+  border: none;
+  border-radius: 4px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.categories__button:hover {
+  background-color: var(--color-text-blue);
+  color: var(--color-text-white);
+  transition: all 0.3s;
 }
 
 .portfolio__projects {
