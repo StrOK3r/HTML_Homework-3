@@ -1,3 +1,5 @@
+/* #region VARIABLES */
+
 :root {
   --color-text-black: #212121;
   --color-text-gray: #757575;
@@ -6,19 +8,34 @@
   --color-text-white: #ffffff;
 }
 
-body {
-  margin: 0;
+/* #endregion */
 
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color: var(--color-text-black);
+/* #region RESET */
+
+body,
+h1,
+h2,
+h3,
+h4,
+ol,
+ul,
+p {
+  margin: 0;
 }
 
 ol,
 ul {
-  margin: 0;
   padding: 0;
   list-style: none;
+}
+
+/* #endregion */
+
+/* #region NORMALIZE */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--color-text-black);
 }
 
 a {
@@ -26,17 +43,19 @@ a {
   color: inherit;
 }
 
+/* #endregion */
+
 .container {
   margin: 0 auto;
   width: 1170px;
 }
 
 .header {
+  border: 1px solid #ececec;
 }
 
 .header__content {
   display: flex;
-  height: 80px;
 }
 
 .header__logo {
@@ -82,6 +101,8 @@ a {
 .nav__link {
   display: flex;
   align-items: center;
+
+  height: 80px;
 
   font-weight: 500;
   font-size: 14px;
@@ -134,12 +155,11 @@ a {
 }
 
 .banner {
+  padding: 200px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  height: 600px;
 
   background-color: var(--color-bg-dark-blue);
 }
@@ -280,7 +300,7 @@ a {
 
   font-size: 16px;
   font-weight: 500;
-  line-height: 18.75px;
+  line-height: 19px;
   letter-spacing: 0.03em;
 
   color: var(--color-text-black);
@@ -290,7 +310,7 @@ a {
   margin: 0;
 
   font-size: 16px;
-  line-height: 18.75px;
+  line-height: 19px;
   letter-spacing: 0.03em;
 
   text-align: center;
@@ -348,16 +368,21 @@ a {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-
-  border: 0px 0px 1px 0px solid #EEEEEE;
 }
 
 .project__item {
   padding: 0 0 20px;
 }
 
+.project__image {
+  display: flex;
+}
+
 .project__content {
-  margin: 20px auto;
+  padding: 20px 24px;
+
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .project__title {
